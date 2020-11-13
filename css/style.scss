@@ -1,0 +1,106 @@
+@import 'variables';
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+section.for_navbar{
+    height: 300px;
+    background-image: url("../images/navbar3.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+
+}
+section.after_nav_color{
+    background-color: rgb(190, 189, 189);
+    .after_nav{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+        .section_one_image{
+            background-image: url("../images/section_one.png");
+            background-repeat: no-repeat;
+            background-size:cover; 
+            height: 400px;
+            position: relative;
+        }
+        .section_one_image::after{
+            content: 'Specify the size of a background image';
+            position: absolute;
+            bottom: 0px;
+            height: 70px;
+            width: 100%;
+            display: flex;
+            background-color: rgba(0, 0, 139, 0.472);
+            font-size: 1vw;
+            color: white;
+            padding-right: 32px;
+            padding-top: auto;
+            align-items:center;
+            justify-content:center;
+        }
+        .row{
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+        }
+    }
+    .col-12.col-lg-4{
+        padding-left: 0px !important
+    }
+    .topic{
+        font-size: 3vw !important;
+        // margin-left: 0px !important;
+        padding-top: 40px;
+        color: gray;
+        font-weight: 300;
+    }
+}
+nav{
+    height: 50px;
+    transition: height 1s ease;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    a.navbar-brand{
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        padding-right: 1px !important;
+        margin: 0px !important;
+        height: 50px;
+        margin-right: 2px !important;
+    }
+    div ul li{
+        height: 50px;
+    }
+}
+// Breadcrumb
+.Breadcrumb nav ol.breadcrumb{
+    padding-left: 0px !important;
+}
+
+///////////////////////////
+@media (max-width: $breakpoint-tablet) {
+    section.for_navbar{
+        height: 50px;
+    }
+    nav{
+        height: auto;
+        padding: 0px !important;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        div{
+            height: auto;
+        }
+        a{
+            padding-top: 0px !important;
+        }
+        div ul li{
+            height: auto;
+        }
+    }
+}
