@@ -10,6 +10,13 @@ section.for_navbar {
   position: relative;
 }
 
+section.section_width {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+}
+
 section.after_nav_color {
   background-color: #bebdbd;
 }
